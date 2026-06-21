@@ -1,0 +1,18 @@
+# Visual Studio settings and temporary files
+.vs/
+
+# Build output
+bin/
+obj/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+
+# NuGet
+*.nupkg
+packages/
+
+# Rider
+.idea/
