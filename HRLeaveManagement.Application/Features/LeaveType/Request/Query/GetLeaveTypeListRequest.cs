@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace HRLeaveManagement.Application.Features.LeaveType.Request
+namespace HRLeaveManagement.Application.Features.LeaveType.Request.Query
 {
     public class GetLeaveTypeListRequest : IRequest<List<LeaveTypeDto>>
     {

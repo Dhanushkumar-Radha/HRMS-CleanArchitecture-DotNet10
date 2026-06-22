@@ -4,9 +4,9 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace HRLeaveManagement.Application.Features.LeaveType.Request
+namespace HRLeaveManagement.Application.Features.LeaveAllocations.Request.Query
 {
-    public class GetLeaveTypeDetailRequest : IRequest<LeaveTypeDto>
+    public class GetLeaveAllocationDetailRequest : IRequest<LeaveAllocationDto>
     {
         public int Id { get; set; }
 
