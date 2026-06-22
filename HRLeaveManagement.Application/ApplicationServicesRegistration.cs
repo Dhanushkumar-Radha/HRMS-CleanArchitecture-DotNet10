@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using MediatR;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Reflection;
@@ -6,13 +7,15 @@ using System.Text;
 
 namespace HRLeaveManagement.Application
 {
-    public  class ApplicationServicesRegistration
+    public static class ApplicationServicesRegistration
     {
-        public ApplicationServicesRegistration(IServiceCollection services)
+        public static IServiceCollection ConfigureApplicationServices( this IServiceCollection services)
         {
          //services.AddAutoMapper(typeof(ApplicationServicesRegistration));
          services.AddAutoMapper(Assembly.GetExecutingAssembly());
-          
+         services.AddMediatR(Assembly.GetExecutingAssembly());
+            return services;
+
         }
     }
 }

@@ -5,7 +5,8 @@ using System.Text;
 
 namespace HRLeaveManagement.Application.Presistence.Contracts
 {
-    public interface ILeaveTypeRepository :  IGenericRepository<LeaveType>
+    public interface ILeaveTypeRepository : IGenericRepository<LeaveType>
     {
+        Task GetAllAsync();
     }
 }
